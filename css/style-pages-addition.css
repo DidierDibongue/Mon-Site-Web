@@ -1,0 +1,198 @@
+
+/* Pages éditoriales : Qui suis-je ? et À propos */
+.about-page,
+.apropos-page {
+  position: relative;
+  z-index: 1;
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+.about-page {
+  padding: 150px 7% 70px;
+}
+
+.about-intro {
+  max-width: 760px;
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.about-intro h1,
+.apropos-hero h1 {
+  margin: 20px 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(32px, 5vw, 64px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.about-intro h1 span,
+.about-details h2 span,
+.apropos-hero h1 span,
+.apropos-section h2 span,
+.apropos-cta h2 span {
+  color: #a78bfa;
+  text-shadow: 0 0 45px rgba(167, 139, 250, 0.15);
+}
+
+.about-lead {
+  max-width: 580px;
+  margin: 8px 0 24px;
+  color: #b8b5c5;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.about-details {
+  max-width: 760px;
+  padding: 65px 0 40px;
+  scroll-margin-top: 100px;
+}
+
+.about-details h2,
+.apropos-section h2,
+.apropos-cta h2 {
+  margin: 18px 0 25px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.055em;
+}
+
+.about-details > p:not(.eyebrow),
+.interest-card p,
+.apropos-card p,
+.apropos-step p {
+  color: #b8b5c5;
+  line-height: 1.85;
+}
+
+.about-details > p:not(.eyebrow) { 
+  margin-bottom: 18px;
+  font-size: 20px; 
+}
+
+.about-interests {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  padding: 25px 0 75px;
+}
+
+.interest-card {
+  min-width: 0;
+  padding: 25px 22px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 14px;
+  background: rgba(255,255,255,.035);
+  transition: transform .3s ease, border-color .3s ease, background .3s ease;
+}
+.interest-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(167,139,250,.55);
+  background: rgba(167,139,250,.05);
+}
+.interest-number, .service-index {
+  color: #b7a4ff;
+  font-size: .8rem;
+  letter-spacing: .04em;
+}
+.interest-card h3, .apropos-card h3, .apropos-step h3 {
+  margin: 22px 0 12px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.about-end {
+  padding: 45px 0 35px;
+  border-top: 1px solid rgba(255,255,255,.12);
+}
+.about-end > p:first-child {
+  max-width: 750px;
+  margin-bottom: 18px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(27px, 4vw, 42px);
+  letter-spacing: -.04em;
+  line-height: 1.2;
+}
+.about-end .about-lead { margin-top: 0; }
+
+.apropos-page { padding: 0 7% 70px; }
+.apropos-hero {
+  min-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 140px 0 75px;
+}
+.apropos-hero h1 { margin: 18px 0 0; }
+.apropos-hero .services-lead { max-width: 620px; }
+.services-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 28px;
+}
+.text-link { color: #e4e0ef; text-decoration: none; font-size: .92rem; }
+.text-link:hover { color: #b7a4ff; }
+.apropos-section { padding: 65px 0; scroll-margin-top: 100px; }
+.apropos-principles { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 20px; }
+.apropos-card {
+  min-width: 0;
+  padding: 26px 22px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 14px;
+  background: rgba(255,255,255,.035);
+  transition: border-color .25s ease, transform .25s ease;
+}
+.apropos-card:hover { border-color: rgba(167,139,250,.55); transform: translateY(-4px); }
+.apropos-card h3 { margin-top: 22px; }
+.apropos-card p { font-size: .94rem; }
+.apropos-section .services-disclaimer { margin-top: 22px; }
+.apropos-method-list { border-top: 1px solid rgba(255,255,255,.13); }
+.apropos-step {
+  display: grid;
+  grid-template-columns: 55px minmax(0,1fr);
+  gap: 20px;
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(255,255,255,.13);
+}
+.apropos-step > span { color: #b7a4ff; padding-top: 4px; }
+.apropos-step h3 { margin: 0 0 8px; }
+.apropos-step p { max-width: 650px; }
+.apropos-cta { padding: 65px 0 30px; border-top: 1px solid rgba(255,255,255,.13); }
+.apropos-cta h2 { max-width: 900px; }
+
+@media (max-width: 850px) {
+  .about-interests, .apropos-principles { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .about-page, .apropos-page { padding-left: 6%; padding-right: 6%; }
+}
+@media (max-width: 600px) {
+  .about-page { padding-top: 125px; padding-bottom: 45px; }
+  .about-intro { min-height: 60svh; padding: 25px 0 45px; }
+  .about-intro h1, .apropos-hero h1 { font-size: clamp(42px, 10.5vw, 62px); }
+  .about-lead, .apropos-hero .services-lead { font-size: 15px; line-height: 1.8; }
+  .about-details, .apropos-section { padding: 45px 0; }
+  .about-details h2, .apropos-section h2, .apropos-cta h2 { font-size: clamp(30px, 8vw, 42px); }
+  .about-interests, .apropos-principles { grid-template-columns: 1fr; gap: 13px; padding-bottom: 55px; }
+  .interest-card { min-height: auto; }
+  .about-end > p:first-child { font-size: clamp(27px, 7vw, 34px); }
+  .apropos-page { padding-top: 110px; }
+  .apropos-hero { min-height: 65svh; padding: 25px 0 55px; }
+  .services-actions { align-items: flex-start; flex-direction: column; gap: 16px; }
+  .apropos-step { grid-template-columns: 34px minmax(0,1fr); gap: 12px; padding: 22px 0; }
+  .apropos-cta { padding: 45px 0 25px; }
+  .apropos-card:hover, .interest-card:hover { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .interest-card, .apropos-card { transition: none; }
+  .interest-card:hover, .apropos-card:hover { transform: none; }
+}

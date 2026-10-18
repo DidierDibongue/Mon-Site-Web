@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <title>Contact | Création numérique</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-pages-addition.css">
+</head>
+
+<body>
+    <!-- Fond animé Three.js -->
+    <canvas id="three-background"></canvas>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <a class="logo" href="index.html">Didier <span>DIBONGUE</span></a>
+
+        <nav aria-label="Navigation principale">
+            <a href="index.html" >Accueil</a>
+            <a href="qui-suis-je.html">Qui suis-je ?</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Contenu principal centré sur l'écran -->
+    <main class="contact-main">
+        <section class="apropos-hero">
+            <p class="eyebrow">UN PROJET ? UNE IDÉE ?</p>
+            <h1>Parlons de <span>votre réalité.</span></h1>
+            <p class="services-lead">
+                Vous avez besoin d'un outil sur mesure, d'une automatisation ou d'un site web performant ? 
+                Remplissez ce formulaire et décrivez-moi brièvement vos besoins. Je reviendrai vers vous rapidement.
+            </p>
+        </section>
+
+        <!-- Conteneur du formulaire de contact -->
+        <div class="contact-container">
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">VOTRE NOM</label>
+                    <input type="text" id="name" name="name" placeholder="Ex: Jean Dupont" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">ADRESSE EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="Ex: jean.dupont@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">SUJET</label>
+                    <input type="text" id="subject" name="subject" placeholder="Ex: Création d'une application web" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">VOTRE MESSAGE</label>
+                    <textarea id="message" name="message" placeholder="Décrivez votre idée, vos objectifs ou vos contraintes..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    Envoyer le message 
+                    <span aria-hidden="true">↗</span>
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Pied de page (Footer Fixe) -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p class="footer-credits">
+                    &copy; 2026 Didier DIBONGUE. Tous droits réservés.
+                </p>
+                <div class="footer-legal">
+                    <a href="mentions-legales.html">Mentions légales</a>
+                    <span class="separator">·</span>
+                    <a href="confidentialite.html">Confidentialité</a>
+                </div>
+            </div>
+            <div class="footer-socials">
+                <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+                <a href="mailto:votre.email@exemple.com">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Initialisation du script d'arrière-plan 3D -->
+    <script type="module" src="js/three-background.js"></script>
+</body>
+
+</html>
